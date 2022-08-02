@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * prompt - call prompt from another function (prompt)
+ * prompt - call prompt from another function
  *
  **/
 void prompt(void)
 {
 	for (;;)
 	{
-		char *text = NULL, **environ;
-		pid_t child_pid;
+		char *text = NULL, **env;
+		pid_t cpid;
 		int status, lenbuf;
 		size_t bufsize = 0;
 
@@ -21,26 +21,26 @@ void prompt(void)
 			exit(0);
 		if (compareEnv(text, "env") == 0)
 		{
-			while (*environ != NULL)
+			while (*env != NULL)
 			{
 				if (!(_strcmpdir(*environ, "USER")) ||
-						!(_strcmpdir(*environ, "LANGUAGE")) ||
-						!(_strcmpdir(*environ, "SESSION")) ||
-						!(_strcmpdir(*environ, "COMPIZ_CONFIG_PROFILE")) ||
-						!(_strcmpdir(*environ, "SHLV")) ||
-						!(_strcmpdir(*environ, "HOME")) ||
-						!(_strcmpdir(*environ, "C_IS")) ||
-						!(_strcmpdir(*environ, "DESKTOP_SESSION")) ||
-						!(_strcmpdir(*environ, "LOGNAME")) ||
-						!(_strcmpdir(*environ, "TERM")) ||
-						!(_strcmpdir(*environ, "PATH")))
+						!(_strcmpdir(*env, "LANGUAGE")) ||
+						!(_strcmpdir(*env, "SESSION")) ||
+						!(_strcmpdir(*env, "COMPIZ_CONFIG_PROFILE")) ||
+						!(_strcmpdir(*env, "SHLV")) ||
+						!(_strcmpdir(*env, "HOME")) ||
+						!(_strcmpdir(*env, "C_IS")) ||
+						!(_strcmpdir(*env, "DESKTOP_SESSION")) ||
+						!(_strcmpdir(*env, "LOGNAME")) ||
+						!(_strcmpdir(*env, "TERM")) ||
+						!(_strcmpdir(*env, "PATH")))
 				{
-					place(*environ), place("\n"); }
-				environ++; }}
-		child_pid = fork();
-		if (child_pid < 0)
+					place(*env), place("\n"); }
+				env++; }}
+		cpid = fork();
+		if (cpid < 0)
 			perror("Error");
-		if (child_pid == 0)
+		if (cpid == 0)
 			identify_string(text);
 		else
 			wait(&status);
