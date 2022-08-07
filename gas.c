@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * find_command - finds command to execute in path routes.
+ * find_command - finds commands to execute in path routes.
  *
  * @command: first position of getline input.
  *
