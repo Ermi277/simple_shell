@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - func with infinite loop
+ * main - function with infinite loop
  * @ac: No use
  * @av: No use
  * Return: loop.
