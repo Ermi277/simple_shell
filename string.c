@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcmpdir - compares strings to find dir.
+ * _strcmpdir - compares strings to find directory.
  *
  * @s1: string.
  * @s2: string.
