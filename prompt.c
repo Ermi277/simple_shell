@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prompt - call prompt from another function
+ * prompt - calls prompt from another function
  *
  **/
 void prompt(void)
