@@ -284,7 +284,11 @@ $
 ## Authors :black_nib:
 
 * Ermiyas Argaw <[Ermiyas Argaw](https://github.com/Ermi277)>
+<<<<<<< HEAD
 * Muhammed Abdulaziz <[Muhammed Abudlaziz](https://github.com/Fulani-bros)>
+=======
+*  <[](https://github.com/Fulani-bros)>
+>>>>>>> 82602a3066b3c0e825bb030e4f11273d7e4f1a60
 
 ## License :lock:
 
