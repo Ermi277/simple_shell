@@ -52,7 +52,8 @@ int cant_open(char *file_path)
  */
 int proc_file_commands(char *file_path, int *exe_ret)
 {
-	size_t file, b_read, i;
+	int file;
+	size_t b_read, i;
 	unsigned int line_size = 0;
 	unsigned int old_size = 120;
 	char *line, **args, **front;
@@ -61,7 +62,7 @@ int proc_file_commands(char *file_path, int *exe_ret)
 
 	hist = 0;
 	file = open(file_path, O_RDONLY);
-	if (file == -1)
+	if (file == (-1))
 	{
 		*exe_ret = cant_open(file_path);
 		return (*exe_ret);
