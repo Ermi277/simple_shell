@@ -4,7 +4,7 @@ int shellby_exit(char **args, char **front);
 int shellby_cd(char **args, char __attribute__((__unused__)) **front);
 int shellby_help(char **args, char __attribute__((__unused__)) **front);
 /**
-* get_builtin - Matches command with a corresponding
+* get_builtin - Matche command with a corresponding
 *               shellby builtin function.
 * @command: The command to match.
 *
