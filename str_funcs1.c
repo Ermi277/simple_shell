@@ -22,7 +22,7 @@ return (length);
 }
 
 /**
-* _strcpy - Copies the string pointed to by src, including the
+* _strcpy - Copy the string pointed to by src, including the
 *           terminating null byte, to the buffer pointed by des.
 * @dest: Pointer to the destination of copied string.
 * @src: Pointer to the src of the source string.

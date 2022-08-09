@@ -8,7 +8,7 @@ char **_strtok(char *line, char *delim);
  * token_len - Locate the delimiter index marking the end
  *             of the first token contained within a string.
  * @str: The string to be searched.
- * @delim: The delimiter character.
+ * @delim: The delimiter characters.
  *
  * Return: The delimiter index marking the end of
  *         the intitial token pointed to be str.

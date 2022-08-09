@@ -17,7 +17,7 @@ void sig_handler(int sig)
 }
 
 /**
- * execute - Executes a command in a child process.
+ * execute - Execute a command in a child process.
  * @args:An array of arguments.
  * @front:A double pointer to the beginning of args.
  *
