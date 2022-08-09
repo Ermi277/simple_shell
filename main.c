@@ -4,7 +4,7 @@ void sig_handler(int sig);
 int execute(char **args, char **front);
 
 /**
- * sig_handler - Prints a new prompt upon a signal.
+ * sig_handler - Print a new prompt upon a signal.
  * @sig:The signal.
  */
 void sig_handler(int sig)
