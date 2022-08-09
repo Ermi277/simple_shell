@@ -4,7 +4,7 @@ void free_env(void);
 char **_getenv(const char *var);
 
 /**
-* _copyenv - Creates a copy of the environment.
+* _copyenv - Creates copy of the environment.
 *
 * Return: If an error occurs - NULL.
 *         O/w - a double pointer to the new copy.
