@@ -6,7 +6,7 @@ char *get_env_value(char *beginning, int len);
 void variable_replacement(char **args, int *exe_ret);
 
 /**
-* free_args - Frees up memory taken by args.
+* free_args - Frees up memory space taken by args.
 * @args: A null-terminated double pointer containing commands/arguments.
 * @front: A double pointer to the beginning of args.
 */
