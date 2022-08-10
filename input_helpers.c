@@ -16,17 +16,16 @@ int check_args(char **args);
 */
 char *get_args(char *line, int *exe_ret)
 {
-size_t n = 0;
-ssize_t read;
-char *prompt = "$ ";
+	size_t n = 0;
+	ssize_t read;
+	char *prompt = "$ ";
 
-if (line)
-free(line);
-
-read = _getline(&line, &n, STDIN_FILENO);
-if (read == -1)
-return (NULL);
-if (read == 1)
+	if (line)
+		free(line);
+	read = _getline(&line, &n, STDIN_FILENO);
+	if (read == -1)
+		return (NULL);
+	if (read == 1)
 {
 		hist++;
 		if (isatty(STDIN_FILENO))
